@@ -82,9 +82,12 @@ a:hover {
 	}
 
 	p {
-		font-size: 2.8em;
+		font-size: 2em;
 	}
 
+	.quote {
+		padding-top: 0px;
+	}
 	#get-quote {
 		top: 300px;
 		width: 220px;
