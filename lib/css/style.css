@@ -7,7 +7,7 @@ body {
 	background-image: url("code-small.png");
 	background-attachment: "fixed";
 	color: white;
-	font-family: "Droid Sans Mono", "sans-serif";
+	font-family: "Inconsolata";	
 	font-size: 62.5%;
 }
 
@@ -54,11 +54,13 @@ button:hover {
 #get-quote {
 	top: 500px;
 	width: 500px;
+	
 }
 
-a {
+button > a {
 	color: white;
 	line-height: 1px;
+
 }
 
 a:hover {
@@ -67,8 +69,25 @@ a:hover {
 }
 
 #tweet {
-	top: 600px;
+	top: 590px;
 	width: 100px;
+}
+
+h5 {
+	position: absolute;
+	bottom: 0;
+	right: 30px;
+	text-align: right;
+}
+
+h5 > a {
+	color: white;
+}
+
+h5 > a:hover {
+	color: #3FACE3;
+	text-decoration: none;
+
 }
 
 @media screen and (max-width: 768px) {
@@ -77,38 +96,39 @@ a:hover {
 	}
 
 	#quote-section {
-		margin-top: 30px;
+		margin-top: 10px;
 		height: 400px;
 	}
 
 	h1 {
+		padding-top: 10px;
 		font-size: 4.5em;
 	}
 
 	p {
-		font-size: 2em;
+		font-size: 2.2em;
 	}
 
 	.quote {
 		padding-top: 0px;
 	}
 	#get-quote {
-		top: 300px;
+		top: 305px;
 		width: 220px;
 	}
 
 	button {
-		height: 40px;
+		height: 30px;
 		font-size: 2em;
 	}
 
-	a {
-		color: white;
-		line-height: 1px;
+	#tweet {
+		top: 350px;
+		width: 100px;
+		height: 28px; /*non-ideal fix for tweet button height*/
 	}
 
-	#tweet {
-		top: 360px;
-		width: 100px;
+	h5 {
+		font-size: 2em;
 	}
 }
